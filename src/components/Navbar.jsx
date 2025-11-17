@@ -14,7 +14,7 @@ const Navbar = () => {
     setSubmenu(false)
   }
   return (
-    <div class='flex justify-between items-center sticky bg-[var(--Off-white)] inset-0 p-4 lg:p-12'>
+    <div class='flex justify-between items-center sticky bg-[var(--Offwhite)] inset-0 p-4 lg:p-12'>
       <ul class='flex items-center justify-between w-full lg:px-8'>
         <div >
           <img src='images\logo.svg'/>
@@ -31,8 +31,8 @@ const Navbar = () => {
         <img src='images\icon-menu.svg'/>
       </div>
       {subMenu && <div class='bg-[var(--transparentBg)] fixed inset-0 z-1000 flex items-center  justify-end' >
-        <div class='bg-[var(--Off-white)] w-64 p-5 h-full  '>
-          <div class='flex justify-end mb-12' onClick={handlecloseToggle}><img src='images\icon-menu-close.svg'/></div>
+        <div class='bg-[var(--Offwhite)] w-64 p-6 h-full  '>
+          <div class='flex justify-end mb-12' onClick={handlecloseToggle}><img  class='mb-12' src='images\icon-menu-close.svg'/></div>
           <div class='mt-12'>
             <NavLink to='/'><li class='list-none mt-4'>Home</li></NavLink>
             <NavLink to='new'><li class='list-none mt-4'>New</li></NavLink>
